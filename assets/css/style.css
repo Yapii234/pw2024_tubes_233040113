@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     place-content: center;
-    scale: 1.2;
+    
 }
 
 .footer a svg {
@@ -41,7 +41,3 @@
         opacity: 1;
     }
 
-body .background{
-        background-image: url(../assets/img/ag.jpg);
-        background-size: 10vh;
-    }
