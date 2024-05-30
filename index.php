@@ -15,7 +15,7 @@ $total = mysqli_num_rows($result); // Get the total number of rows
 <head>
     <?php include './meta.php' ?>
 </head>
-<body style="background-image: url(../assets/img/kp.jpg); background-attachment: fixed; background-size: cover; background-position: center;">
+<body style="background-image: url(../assets/img/newbg.jpg); background-attachment: fixed; background-size: cover; background-position: center;">
     <?php include './include/navbar.php' ?>
     <section id="home">
     <h2 style="text-align: center; color: aliceblue;">SELAMAT DATANG</h2>
