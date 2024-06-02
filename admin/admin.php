@@ -14,7 +14,7 @@ session_start();
 <div class="container-fluid">
         <h2>Konten Film</h2>
 
-    <a href="tambah_konten.php" class="btn btn-danger">Tambah Konten</a>
+    <a href="tambah.php" class="btn btn-danger">Tambah Konten</a>
     <a href="./kelola_user.php" class="btn btn-warning">Kelola User</a>
 
     <div class="table-responsive">
