@@ -1,20 +1,20 @@
 <?php
 include("config.php");
 
-$search = isset($_GET['search']) ? $_GET['search'] : null;
-$query = "SELECT * FROM isi";
+$search = isset($_GET["search"]) ? $_GET["search"] : null ;
+$sql = "SELECT content_title, content, content_url, content_picture FROM isi";
 if ($search) {
-    $query .= " WHERE content_title LIKE '%$search%' OR content LIKE '%$search%'";
-}
-$result = mysqli_query($koneksi, $query);
-$total = mysqli_num_rows($result); // Get the total number of rows
-
+    $sql .=" WHERE content_title LIKE '%$search%'";
+  }
+$result = mysqli_query($koneksi, $sql);
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php include './meta.php' ?>
 </head>
+
 <body style="background-image: url(../assets/img/newbg.jpg); background-attachment: fixed; background-size: cover; background-position: center;">
     <?php include './include/navbar.php' ?>
     <section id="home">
@@ -45,7 +45,7 @@ $total = mysqli_num_rows($result); // Get the total number of rows
   <!-- Content -->
   <div class="container-sm" id="home">
       <div class="content" style="display: flex; flex-wrap: wrap; width:100%; gap:10px; place-content:center;">
-        <?php if ($total > 0) : ?>
+        <?php if ($result->num_rows > 0) : ?>
             <?php while ($row = mysqli_fetch_assoc($result)) : ?>
                     <div class="card" style="min-width: 300px; max-width: 300px; padding:0; text-align:center;">
                         <div class="wrap_image" style="border: 2px solid black; border-radius:10px; width:100%; height:200px; overflow:hidden;">

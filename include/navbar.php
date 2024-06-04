@@ -27,10 +27,10 @@
           <a class="nav-link disabled" aria-disabled="true" style="font-family: 'Playfair Display', serif;">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="font-family: 'Playfair Display', serif;">
-        <button class="btn btn-outline-success" type="submit" style="font-family: 'Playfair Display', serif;">Search</button>
-      </form>
+      <form class="d-flex" role="search" method="get">
+    <input class="form-control me-2" id="Searchinput" type="search" name="search" placeholder="Search" aria-label="Search" style="font-family: 'Playfair Display', serif;" value="<?php echo isset($search) ? $search : ''; ?>">
+    <button class="btn btn-outline-success" type="submit" style="font-family: 'Playfair Display', serif;">Search</button>
+</form>
     </div>
   </div>
 </nav>
