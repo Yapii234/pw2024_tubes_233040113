@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="#" style="font-family: 'Playfair Display', serif;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="font-family: 'Playfair Display', serif;">Link</a>
+          <a class="nav-link" href="http://pw2024_tubes_233040113.test:8080/admin/admin.php" style="font-family: 'Playfair Display', serif;">Link</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Playfair Display', serif;">

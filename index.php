@@ -18,32 +18,32 @@ $result = mysqli_query($koneksi, $sql);
 <body style="background-image: url(../assets/img/newbg.jpg); background-attachment: fixed; background-size: cover; background-position: center;">
     <?php include './include/navbar.php' ?>
     <section id="home">
-    <h2 style="text-align: center; color: aliceblue;">SELAMAT DATANG</h2>
+    <h2 style="text-align: center; color: brown;">SELAMAT DATANG</h2>
         <!-- carousel -->
-        <div id="carouselExample" class="carousel slide" style="padding-top: 20px;">
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="text-align: -webkit-center;">
-                    <img src="../assets/img/1.jpg" class="d-flex w-10" alt="...>
-                </div>
-                <div class="carousel-item" style="text-align: -webkit-center;">
-                    <img src="../assets/img/5.jpg" class="d-flex w-10" alt="...">
-                </div>
-                <div class="carousel-item" style="text-align: -webkit-center;">
-                    <img src="../assets/img/30.webp" class="d-flex w-10" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active"style="text-align: -webkit-center;">
+      <img src="../assets/img/1.jpg" class="d-flex w-10" alt="...">
+    </div>
+    <div class="carousel-item" style="text-align: -webkit-center;">
+      <img src="../assets/img/5.jpg" class="d-flex w-10" alt="...">
+    </div>
+    <div class="carousel-item" style="text-align: -webkit-center;">
+      <img src="../assets/img/5.jpg" class="d-flex w-10" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     </section>
   <!-- Content -->
-  <div class="container-sm" id="home">
+  <div class="container-sm" id="home" style="padding-top: 10px;">
       <div class="content" style="display: flex; flex-wrap: wrap; width:100%; gap:10px; place-content:center;">
         <?php if ($result->num_rows > 0) : ?>
             <?php while ($row = mysqli_fetch_assoc($result)) : ?>

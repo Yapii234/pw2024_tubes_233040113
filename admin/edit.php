@@ -65,13 +65,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="edit">
     <?php include '../meta.php'; ?>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-    <?php include '../include/navbar.php'; ?>
+<body style="background-color: brown;">
     <div class="container">
-        <h2>Edit Konten Film</h2>
+        <h2 style="text-align: center;">Edit Konten</h2>
         <form method="POST" action="edit.php?content_id=<?php echo $id; ?>" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="content_title">Judul Konten</label>
@@ -88,9 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <label for="content_picture">Foto</label>
                 <input type="file" class="form-control" id="content_picture" name="content_picture" required>
-                <img src="../assets/img/<?php echo $row['content_picture']; ?>" style="width: 100px;">
+                <img src="../assets/img/<?php echo $row['content_picture']; ?>" style="width: 100px;margin-top: 5px; ">
             </div>
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-primary" style="margin-top: 5px; margin-bottom: 130px;">Update</button>
         </form>
     </div>
     <?php include '../include/footer.php'; ?>

@@ -16,18 +16,8 @@ $search = isset($_GET["search"]) ? $_GET["search"] : null ;
         <h2>Konten Film</h2>
 
     <a href="tambah.php" class="btn btn-danger">Tambah Konten</a>
-    <a href="./kelola_user.php" class="btn btn-warning">Kelola User</a>
     <br>
 
-<form action="" method="post">
-
-<input type="text" name="keyword" size="30"
-placeholder="masukan keyword" autocomplete="off">
-<button type="submit" name="cari">Cari!</button>
-
-
-
-</form>
 
     <div class="table-responsive">
         <table class="table">
