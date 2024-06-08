@@ -13,6 +13,14 @@ $result = mysqli_query($koneksi, $sql);
 <html lang="en">
 <head>
     <?php include './meta.php' ?>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+    h2 {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+    </style>
 </head>
 
 <body style="background-image: url(../assets/img/newbg.jpg); background-attachment: fixed; background-size: cover; background-position: center;">
