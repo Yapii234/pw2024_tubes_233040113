@@ -1,4 +1,22 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+h2 {
+    padding-top: 15px;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center; 
+    color: #57A6A1 !important;
+  }
+p {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+body {
+    background-color:#27496D !important;
+  }
 .footer {
     display: flex;
     place-content: center;
@@ -41,7 +59,6 @@
         visibility: visible;
         opacity: 1;
     }
-
     .kanit-semibold {
         font-family: "Kanit", sans-serif;
         font-weight: 600;

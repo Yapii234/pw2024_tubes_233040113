@@ -1,32 +1,31 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="font-family: 'Lato', sans-serif;">
+<?php
+define('BASE_URL', 'http://localhost/pw2024_tubes_233040113/');
+?>
+<nav class="navbar navbar-expand-lg navbar fixed-top" style="font-family: 'Lato', sans-serif; background-color: #142850;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="font-family: 'Playfair Display', serif;">Navbar</a>
+    <a class="navbar-brand" href="#" style="font-family: 'Playfair Display', serif; font-weight: 900; color:#265073;">Travel GO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="font-family: 'Playfair Display', serif;">Home</a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>" style=" font-family: 'Playfair Display', serif;color: #577B8D !important;
+        font-weight: 700 !important;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASE_URL; ?>/admin/admin.php" style="font-family: 'Playfair Display', serif;color: #577B8D !important;
+        font-weight: 700 !important;">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASE_URL; ?>index.php#home" style="font-family: 'Playfair Display', serif;color: #577B8D !important;
+        font-weight: 700 !important;">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://pw2024_tubes_233040113.test:8080/admin/admin.php" style="font-family: 'Playfair Display', serif;">Admin</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Playfair Display', serif;">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#" style="font-family: 'Playfair Display', serif;">Action</a></li>
-            <li><a class="dropdown-item" href="#" style="font-family: 'Playfair Display', serif;">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" style="font-family: 'Playfair Display', serif;">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true" style="font-family: 'Playfair Display', serif;">Disabled</a>
+          <a class="nav-link" aria-disabled="true" style="font-family: 'Playfair Display', serif;"></a>
         </li>
       </ul>
+      
 
       <form class="d-flex" role="search" method="get">
     <input class="form-control me-2" id="Searchinput" type="search" name="search" placeholder="Search" aria-label="Search" style="font-family: 'Playfair Display', serif;" value="<?php echo isset($search) ? $search : ''; ?>">
@@ -34,7 +33,4 @@
 </form>
     </div>
   </div>
-</nav>
-</nav>
-</nav>
 </nav>

@@ -12,8 +12,8 @@ $search = isset($_GET["search"]) ? $_GET["search"] : null ;
 </head>
 <body>
     <?php include '../include/navbar.php'?>
-<div class="container-fluid">
-        <h2>Konten Film</h2>
+<div class="container-fluid" style="padding-top: 52px;">
+        <h2>Konten</h2>
 
     <a href="tambah.php" class="btn btn-danger">Tambah Konten</a>
     <br>
